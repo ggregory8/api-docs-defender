@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../swagger-ui/swagger-ui.css" />
+</head>
+<body>
+  <div id="swagger-ui"></div>
+  <script src="../swagger-ui/swagger-ui-bundle.js"></script>
+  <script src="../swagger-ui/swagger-ui-standalone-preset.js"></script>
+  <script>
+    window.onload = function() {
+      window.ui = SwaggerUIBundle({
+        url: "./openapi.yaml",    // <--- points to api1's openapi.yaml
+        dom_id: '#swagger-ui',
+      });
+    };
+  </script>
+</body>
+</html>
